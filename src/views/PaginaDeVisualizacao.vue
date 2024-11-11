@@ -50,7 +50,56 @@
                 <div class="opcao2">Cursos que o SENAI pode atender a sua empresa</div>
             </div>
             <div class="caixaLista">
-                a
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
+                <div class="listaTitulo">
+                    <h1>Auxiliar de Linha de Produção</h1>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </div>
+                <hr>
             </div>
         </div>
 
@@ -75,6 +124,7 @@ export default {
 </script>
 
 <style>
+
     .caixaGeralVisualizacao{
         display: flex;
         flex-direction: column;
@@ -91,8 +141,10 @@ export default {
             flex-direction: row;
             gap: 10px;
             max-width: 2000px;
+            height: 100%;
             margin: auto;
             overflow-y: auto;
+            overflow: hidden;
 
             .caixaInformacoes{
                 display: flex;
@@ -100,15 +152,13 @@ export default {
                 gap: 10px;
                 margin-top: 5px;
                 box-sizing: border-box;
-                height: 99%;
                 align-items: center;
-                max-height: 2000px;
 
                 .nomeEmpresa{
                     background-color: #6cc3d55e;
                     border-radius: 30px;
                     width: 300px;
-                    height: 30%;
+                    height: 25vh;
                     align-content: center;
 
                     h1{
@@ -122,9 +172,10 @@ export default {
                 .informacoesEmpresa{
                     background-color: #6cc3d55e;
                     border-radius: 30px;
-                    height: 75%;
                     width: 300px;
-                    max-height: 67%;
+                    height: 100vh;
+                    scrollbar-width: none;
+                    overflow-y: auto;
 
                     h1{
                         font-size: 16px;
@@ -132,14 +183,13 @@ export default {
                     }
 
                     .caixaEspecificacoes{
-                        margin: 0px 10px;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px 10px;
                         padding: 5px 10px;
                         font-size: 12px;
                         background-color: #6cc3d55e;
                         border-radius: 15px;
-                        scrollbar-width: none;
-                        overflow-y: auto;
-                        max-height: 80%;
 
                         h1{
                             font-size: 12px;
@@ -156,9 +206,11 @@ export default {
             /* background-color: aqua; */
             width: 75vw;
             margin: 5px 0px;
+
             .caixaOpcoes{
                 display: flex;
                 justify-content: space-evenly;
+                gap: 10px;
                 width: 100%;
 
                 .opcao1{
@@ -168,6 +220,7 @@ export default {
                     font-weight: bold;
                     padding: 20px;
                     border-radius: 10px;
+                    cursor: pointer;
                 }
                 .opcao2{
                     background-color: #6cc3d55e;
@@ -176,9 +229,35 @@ export default {
                     font-weight: bold;
                     padding: 20px;
                     border-radius: 10px;
+                    cursor: pointer;
                 }
             }
             .caixaLista{
+                background-color: #6cc3d55e;
+                margin-top: 10px;
+                border-radius: 10px;
+                height: 100vh;
+                scrollbar-width: none;
+                overflow-y: auto;
+                
+                hr{
+                    border-color: #fff;
+                }
+
+                .listaTitulo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 20px  ;
+
+                    h1{
+                        font-size: 16px;
+                    }
+
+                    span{
+                        cursor: pointer;
+                    }
+                }
 
             }
         }
